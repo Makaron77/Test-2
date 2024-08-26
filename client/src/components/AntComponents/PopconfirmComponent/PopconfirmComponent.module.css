@@ -1,0 +1,7 @@
+.customPopconfirm .ant-popover-inner {
+  height: 100px !important; 
+}
+
+.customPopconfirm .ant-popover-content {
+  padding: 100px; /* Дополнительные стили */
+}
