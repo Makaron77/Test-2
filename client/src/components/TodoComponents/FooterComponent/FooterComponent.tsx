@@ -11,7 +11,7 @@ export default function FooterComponent() {
 
 	return (
 		<footer className={styles.footer}>
-			<div className={styles.footer__blockItem}>{`${todos.filter(todo => !todo.check).length} items left`}</div>
+			<div className={styles.footer__blockItem}>{`${todos.filter(todo => !todo.check).length} активные задачи`}</div>
 			<ToggleButtonGroup
 				color='primary'
 				value={alignment}
@@ -22,9 +22,9 @@ export default function FooterComponent() {
 				aria-label='Platform'
 				className={styles.footer__blockSorted}
 			>
-				<ToggleButton value='all'>All</ToggleButton>
-				<ToggleButton value='active'>Active</ToggleButton>
-				<ToggleButton value='completed'>Completed</ToggleButton>
+				<ToggleButton value='all'>Все</ToggleButton>
+				<ToggleButton value='active'>Активные</ToggleButton>
+				<ToggleButton value='completed'>Завершённые</ToggleButton>
 			</ToggleButtonGroup>
 
 			<PopconfirmComponent/>

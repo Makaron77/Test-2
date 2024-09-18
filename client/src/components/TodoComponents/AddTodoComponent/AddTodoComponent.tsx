@@ -34,7 +34,7 @@ export default function AddTodoComponent() {
 		<form onSubmit={handleAddTodo} className={styles.form}>
 			<TextField
 				id='standard-basic'
-				label='Standard'
+				label='Введите задачу'
 				variant='standard'
 				value={newTodo}
 				onChange={e => setNewTodo(e.target.value)}
@@ -45,6 +45,7 @@ export default function AddTodoComponent() {
 				variant='contained'
 				color='primary'
 				className={styles.button}
+				
 			>
 				Добавить
 			</Button>

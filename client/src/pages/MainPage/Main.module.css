@@ -10,7 +10,7 @@ align-items: center;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid black;
+	border: 1px solid rgba(58, 58, 58, 0.767);
 	width: 60%;
 	margin: 0 auto;
 	

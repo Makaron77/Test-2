@@ -40,7 +40,7 @@ const PopconfirmComponent: React.FC = () => {
 			cancelText='No'
 			className={styles.customPopconfirm}
 		>
-			<Button danger>Clear completed</Button>
+			<Button danger>Очистить завершенные</Button>
 		</Popconfirm>
 	);
 };
