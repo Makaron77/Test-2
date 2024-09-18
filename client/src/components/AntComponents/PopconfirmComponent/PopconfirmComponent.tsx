@@ -17,27 +17,27 @@ const PopconfirmComponent: React.FC = () => {
 				const response = await axios.get('http://localhost:3005/api/todos');
 
 				setTodos(response.data);
-				message.success('Tasks deleted successfully');
+				message.success('завершенная задача удалена');
 			} else {
-				message.success('Больше нет завершенных задач');
+				message.warning('нет завершенных задач');
 			}
 		} catch (error) {
-			message.error('Failed to delete tasks');
+			message.error('Ошибка при удалении задач');
 		}
 	};
 
 	const cancel: PopconfirmProps['onCancel'] = () => {
-		message.error('Click on No');
+		
 	};
 
 	return (
 		<Popconfirm
-			title='Delete the task'
-			description='Are you sure to delete this task?'
+			title='Удаление завершенных задач'
+			description='Ты уверен, что хочешь удалить?'
 			onConfirm={confirm}
 			onCancel={cancel}
-			okText='Yes'
-			cancelText='No'
+			okText='Да'
+			cancelText='Неа'
 			className={styles.customPopconfirm}
 		>
 			<Button danger>Очистить завершенные</Button>
