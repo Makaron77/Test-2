@@ -1,12 +1,21 @@
 fullstack todo-list.
 
+Инструкция по запуску локально:
+
+
 Запустить фронт:
  - cd Test-2/client
+ - npm i
  - npm run dev
 
 Запустить бэк: 
  - cd Test-2/server
- Создать базу данных
+ - npm i
+ - создать в корне server папку .env и скопировать данные из .env_exaple
+ - 
+ Создать базу данных:
+  - npx sequelize db:create - создание
+  - npx sequelize-cli db:migrate - миграция
  - npm run start
 
 
