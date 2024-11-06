@@ -13,7 +13,8 @@ fullstack todo-list.
   
  Создать базу данных:
   - создание базы данных, зависимости, накатить миграции, запустить сервер локально:
-  -  npx sequelize db:create && npm run start && npm i && npx sequelize-cli db:migrate 
+  -  npm install && npx sequelize db:create && npx sequelize-cli db:migrate && npm run start
+
 
 
 (![image](https://github.com/user-attachments/assets/76420a93-16ac-45d9-a4ae-92c15776607a))
