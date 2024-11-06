@@ -6,7 +6,7 @@ import axios from 'axios';
 import { TodoContext } from '../../../context/todoContext';
 
 const PopconfirmComponent: React.FC = () => {
-	const [todos, setTodos] = useContext(TodoContext);
+	const [todos, setTodos] = useContext(TodoContext)!;
 
 	const confirm: PopconfirmProps['onConfirm'] = async () => {
 		try {

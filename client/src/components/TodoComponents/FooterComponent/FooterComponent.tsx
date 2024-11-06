@@ -3,10 +3,12 @@ import styles from './FooterComponent.module.css'
 import { ToggleButton, ToggleButtonGroup } from '@mui/material';
 import PopconfirmComponent from '../../AntComponents/PopconfirmComponent/PopconfirmComponent';
 import { TodoContext } from '../../../context/todoContext';
+import { TodoContextType } from '../../../types/types';
 export default function FooterComponent() {
 
 
-	const [todos, setTodos, alignment, setAlignment] = useContext(TodoContext);
+	const [todos, setTodos, alignment, setAlignment] =
+		useContext(TodoContext)!;
 
 
 	return (
@@ -18,9 +20,9 @@ export default function FooterComponent() {
 				color='primary'
 				value={alignment}
 				exclusive
-				onChange={event =>
-					event.target.value && setAlignment(event.target.value)
-				}
+				onChange={(event: React.MouseEvent<HTMLElement>, value: string) => {
+					if (value) setAlignment(value);
+				}}
 				aria-label='Platform'
 				className={styles.footer__blockSorted}
 			>

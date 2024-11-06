@@ -9,7 +9,7 @@ export default function AddTodoComponent() {
 	const [todos, setTodos] = useContext(TodoContext);
 	const [newTodo, setNewTodo] = useState('');
 
-	const handleAddTodo = async event => {
+	const handleAddTodo = async (event: React.FormEvent<HTMLFormElement>) => {
 		event.preventDefault();
 
 		if (!newTodo.trim()) {
@@ -22,7 +22,7 @@ export default function AddTodoComponent() {
 				check: false,
 			});
 
-			setTodos(prevTodos => [...prevTodos, response.data]);
+			setTodos(prevTodos => [response.data, ...prevTodos]);
 
 			setNewTodo('');
 		} catch (error) {
