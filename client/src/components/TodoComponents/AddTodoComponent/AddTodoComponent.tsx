@@ -3,7 +3,7 @@ import React, { useContext, useState } from 'react';
 import { TodoContext } from '../../../context/todoContext';
 import { message } from 'antd';
 import axios from 'axios';
-import styles from './AddTodo.module.css'
+import styles from './AddTodo.module.scss';
 
 export default function AddTodoComponent() {
 	const [todos, setTodos] = useContext(TodoContext);
@@ -32,10 +32,8 @@ export default function AddTodoComponent() {
 
 	return (
 		<form onSubmit={handleAddTodo} className={styles.form}>
-			<TextField
+			<input
 				id='standard-basic'
-				label='Введите задачу'
-				variant='standard'
 				value={newTodo}
 				onChange={e => setNewTodo(e.target.value)}
 				className={styles.input}
@@ -45,7 +43,6 @@ export default function AddTodoComponent() {
 				variant='contained'
 				color='primary'
 				className={styles.button}
-				
 			>
 				Добавить
 			</Button>

@@ -1,0 +1,27 @@
+.form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-right: 30px;
+	gap: 10px;
+	background-color: white;
+	border-bottom: 2px solid rgb(247, 244, 242);
+	.input {
+		padding-left: 30px;
+		width: 600px;
+		height: 60px;
+		border: none;
+		outline: none;
+		font-size: 25px;
+		font-family: 'Montserrat', sans-serif;
+	}
+
+	.button {
+		height: 30px;
+		background-color: rgb(207, 153, 140);
+		&:hover{
+			background-color: rgb(247, 244, 242);
+			color: rgb(141, 141, 141);
+		}
+	}
+}

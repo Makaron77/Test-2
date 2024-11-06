@@ -1,6 +1,6 @@
 import { List, ListItem } from '@mui/material';
 import React, { useContext, useEffect } from 'react';
-import styles from './Main.module.css';
+import styles from './Main.module.scss';
 import axios from 'axios';
 import { TodoContext } from '../../context/todoContext';
 import CheckboxComponent from '../../components/TodoComponents/CheckboxComponent/CheckboxComponent';
@@ -38,18 +38,23 @@ const [todos, setTodos, alignment] = useContext<Todo[] | string>(
 				<header className={styles.container__elementHeader}>
 					<h1>todos</h1>
 				</header>
-				<AddTodoComponent />
-				<List className={styles.container__elementList}>
-					{filteredTodos.map(todo => (
-						<ListItem key={todo.id}>
-							<CheckboxComponent id={todo.id} check={todo.check} />
-							<span className={todo.check ? styles.strikethrough : ''}>
-								{todo.name}
-							</span>
-						</ListItem>
-					))}
-				</List>
-					<FooterComponent/>
+
+				<div className={styles.container__elementListAndInput}>
+					<AddTodoComponent />
+					<div className={styles.container__elementList}>
+						{filteredTodos.map(todo => (
+							<ListItem key={todo.id} className={styles.listLine}>
+								<CheckboxComponent id={todo.id} check={todo.check} />
+								<span className={todo.check ? styles.strikethrough : ''}>
+									{todo.name}
+								</span>
+							</ListItem>
+						))}
+					</div>
+					<div className={styles.footer}>
+						<FooterComponent />
+					</div>
+				</div>
 			</main>
 		</div>
 	);
