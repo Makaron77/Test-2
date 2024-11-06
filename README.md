@@ -18,7 +18,8 @@ fullstack todo-list.
   - npx sequelize-cli db:migrate - миграция
  - npm run start
 
-![image](![image](https://github.com/user-attachments/assets/77f21710-d222-441c-82ec-71d9201a2232)
+![image](![image](![image](https://github.com/user-attachments/assets/76420a93-16ac-45d9-a4ae-92c15776607a)
+
 
 
 
