@@ -18,7 +18,7 @@ fullstack todo-list.
   - npx sequelize-cli db:migrate - миграция
  - npm run start
 
-(![image](https://github.com/user-attachments/assets/76420a93-16ac-45d9-a4ae-92c15776607a)
+(![image] https://github.com/user-attachments/assets/76420a93-16ac-45d9-a4ae-92c15776607a)
 
 
 
@@ -31,5 +31,5 @@ fullstack todo-list.
 Проект должен запускаться командой npm i && npm run start
 Проект доступен на GitHub Pages/Vercel/etc.
 
-(![image](https://github.com/user-attachments/assets/efe3bffc-9ee5-4a62-b759-4e0f900a36df)
+(![image] https://github.com/user-attachments/assets/efe3bffc-9ee5-4a62-b759-4e0f900a36df)
 
