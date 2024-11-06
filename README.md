@@ -1,7 +1,7 @@
 fullstack todo-list.
 
 Инструкция по запуску локально:
-[Ссылка на видео-инструкцию][https://youtu.be/KFRDjYg_Vx8?si=gv-MjtZejM7l8bDV](https://rutube.ru/video/private/88a286ebe687a65859dd4d3fd293da65/?p=g5xO-gEDJAebOt0vtVlz4Q)
+[Ссылка на видео-инструкцию]([https://youtu.be/KFRDjYg_Vx8?si=gv-MjtZejM7l8bDV](https://rutube.ru/video/private/88a286ebe687a65859dd4d3fd293da65/?p=g5xO-gEDJAebOt0vtVlz4Q))
 
 Запустить фронт:
  - cd Test-2/client
