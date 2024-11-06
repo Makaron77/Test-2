@@ -5,32 +5,30 @@ fullstack todo-list.
 
 Запустить фронт:
  - cd Test-2/client
- - npm i
- - npm run dev
+ - npm i && npm run start
 
 Запустить бэк: 
  - cd Test-2/server
- - npm i
- - создать в корне server папку .env и скопировать данные из .env_exaple
- - 
+ - создать в корне server файл .env и скопировать данные из .env_exaple
+  
  Создать базу данных:
-  - npx sequelize db:create - создание
-  - npx sequelize-cli db:migrate - миграция
- - npm run start
+  - создание базы данных, зависимости, накатить миграции, запустить сервер локально:
+  -  npm install && npx sequelize db:create && npx sequelize-cli db:migrate && npm run start
 
 
 
-Тестовое задание туду лист.
-Сделайте ToDo-приложение, позволяющее управлять текущим списком дел
-Что должно быть в интерфейсе:
-Поле для ввода новой задачи
-Списки всех задач, невыполненных и выполненных задач (по отдельности)
-Пример внешнего вида приложения
- 
+(![image](https://github.com/user-attachments/assets/76420a93-16ac-45d9-a4ae-92c15776607a))
+
+
+
+
+
 Требования к коду:
 Приложение создано с использованием TypeScript, React и React Hooks
 Библиотеки компонент – на ваше усмотрение
 Ключевая на ваш взгляд функциональность обязательно покрыта тестами
 Проект должен запускаться командой npm i && npm run start
 Проект доступен на GitHub Pages/Vercel/etc.
-![image](https://github.com/user-attachments/assets/6241a555-b791-494a-b957-f8f1fe32b79e)
+
+(![image](https://github.com/user-attachments/assets/efe3bffc-9ee5-4a62-b759-4e0f900a36df))
+
