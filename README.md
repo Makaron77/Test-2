@@ -31,5 +31,5 @@ fullstack todo-list.
 Проект должен запускаться командой npm i && npm run start
 Проект доступен на GitHub Pages/Vercel/etc.
 
-(https://github.com/user-attachments/assets/efe3bffc-9ee5-4a62-b759-4e0f900a36df)
+(![image](https://github.com/user-attachments/assets/efe3bffc-9ee5-4a62-b759-4e0f900a36df)
 
